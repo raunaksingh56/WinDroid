@@ -1,3 +1,4 @@
+@file:OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
 /*
  * WinDroid - Home Screen
  * Created by Raunak Singh
@@ -5,6 +6,7 @@
  */
 
 package com.raunaksingh.windroid.ui.screens
+import androidx.compose.material3.HorizontalDivider
 
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult

@@ -77,7 +77,7 @@ fun ProgressScreen(state: FlashState, vm: WinDroidViewModel) {
             // Big progress circle
             Box(contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(
-                    progress = { state.flashProgress / 100f },
+                    progress = state.flashProgress / 100f,
                     modifier = Modifier.size(160.dp),
                     color    = ElectricBlue,
                     trackColor = NavyBorder,
@@ -108,7 +108,7 @@ fun ProgressScreen(state: FlashState, vm: WinDroidViewModel) {
 
             // Progress bar
             LinearProgressIndicator(
-                progress = { state.flashProgress / 100f },
+                progress = state.flashProgress / 100f,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(6.dp)
